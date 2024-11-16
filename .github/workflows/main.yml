@@ -6,9 +6,36 @@ on:
 
 jobs:
   build:
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Run a one-line script
-      run: echo "Hello, world!"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install xcpretty
+        run: |
+          sudo gem install xcpretty
+
+      - name: Install dependencies if needed
+        run: |
+          if [ -f Package.swift ]; then
+            swift package update
+          fi
+
+          if [ -f Podfile ]; then
+            sudo gem install cocoapods
+            pod install
+          fi
+
+      - name: Run tests
+        run: |
+          make clean
+          make test
+          codecov
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

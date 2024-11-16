@@ -1,0 +1,13 @@
+coverage:
+  precision: 2
+  range: 80...100
+  fail_ci: true
+
+parsers:
+  gcov:
+    branch_detection: true
+
+comment:
+  layout: "table"
+  require_changes: true
+  behavior: default
