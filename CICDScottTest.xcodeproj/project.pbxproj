@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1616CEE22CE8B543009F923A /* Exceptions for "CICDScottTest" folder in "CICDScottTest" target */ = {
+		1616CEE22CE8B543009F923A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,24 +40,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1616CEBC2CE8B541009F923A /* CICDScottTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1616CEE22CE8B543009F923A /* Exceptions for "CICDScottTest" folder in "CICDScottTest" target */,
-			);
-			path = CICDScottTest;
-			sourceTree = "<group>";
-		};
-		1616CED32CE8B543009F923A /* CICDScottTestTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CICDScottTestTests;
-			sourceTree = "<group>";
-		};
-		1616CEDD2CE8B543009F923A /* CICDScottTestUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CICDScottTestUITests;
-			sourceTree = "<group>";
-		};
+		1616CEBC2CE8B541009F923A /* CICDScottTest */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1616CEE22CE8B543009F923A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CICDScottTest; sourceTree = "<group>"; };
+		1616CED32CE8B543009F923A /* CICDScottTestTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CICDScottTestTests; sourceTree = "<group>"; };
+		1616CEDD2CE8B543009F923A /* CICDScottTestUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CICDScottTestUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +185,7 @@
 				};
 			};
 			buildConfigurationList = 1616CEB52CE8B541009F923A /* Build configuration list for PBXProject "CICDScottTest" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -208,7 +194,6 @@
 			);
 			mainGroup = 1616CEB12CE8B541009F923A;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 1616CEBB2CE8B541009F923A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
