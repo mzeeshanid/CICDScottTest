@@ -11,7 +11,9 @@ import Testing
 struct CICDScottTestTests {
 
     @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+        #expect(2 == 2)
+        #expect(3 == 3)
+        #expect(4 == 4)
     }
 
 }
