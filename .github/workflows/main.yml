@@ -31,9 +31,7 @@ jobs:
 
       - name: Run tests
         run: |
-          make clean
-          make test
-          codecov
+          xcodebuild test | xcpretty --format gcov
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v4
