@@ -13,6 +13,7 @@ struct CICDScottTestTests {
     @Test func example() async throws {
         #expect(2 == 2)
         #expect(3 == 3)
+        #expect(4 == 4)
     }
 
 }
