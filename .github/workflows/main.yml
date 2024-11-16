@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Run tests and collect coverage
-    runs-on: macOS-latest
+    runs-on: macOS-15.1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
